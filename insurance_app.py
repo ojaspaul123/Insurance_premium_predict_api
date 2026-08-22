@@ -15,7 +15,7 @@ app = FastAPI()
 def home():
     return {'message': 'Insurance Premium Prediction API'}
 
-@app.get('/health', response_model=PredictionResponse)
+@app.get('/health')
 def health_check():
     return {
         'status': 'OK',
